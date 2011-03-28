@@ -1,12 +1,12 @@
-# Cards
+= Cards
 
 Easily create PDF story cards from Agilefant Excel exports.
 
-## Installation
+== Installation
 
     bundle install
 
-## Usage
+== Usage
 
 Download an export of the current Agilefant sprint. XLS format is okay. Put
 that file in the root of this project and rename it to `data.xls`.
