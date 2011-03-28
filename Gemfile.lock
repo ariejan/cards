@@ -1,0 +1,22 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    htmlentities (4.2.4)
+    prawn (0.8.4)
+      prawn-core (>= 0.8.4, < 0.9)
+      prawn-layout (>= 0.8.4, < 0.9)
+      prawn-security (>= 0.8.4, < 0.9)
+    prawn-core (0.8.4)
+    prawn-layout (0.8.4)
+    prawn-security (0.8.4)
+    ruby-ole (1.2.11.1)
+    spreadsheet (0.6.5.2)
+      ruby-ole (>= 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  htmlentities
+  prawn
+  spreadsheet
