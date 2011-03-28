@@ -33,6 +33,11 @@ prawn_options = {
 Prawn::Document.generate('stories.pdf', prawn_options) do |pdf|
 
   stories.each do |story|
+    
+    pdf.font "#{Prawn::BASEDIR}/data/fonts/DejaVuSans.ttf"
+    pdf.font_size 24
+    pdf.text "PP:                                     VERIFIER:"
+
     # Draw points
     pdf.font "#{Prawn::BASEDIR}/data/fonts/DejaVuSans.ttf", :style => :bold
     pdf.font_size 64
