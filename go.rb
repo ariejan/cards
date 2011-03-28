@@ -47,7 +47,9 @@ Prawn::Document.generate('stories.pdf', prawn_options) do |pdf|
 
     pdf.font "#{Prawn::BASEDIR}/data/fonts/DejaVuSans.ttf"
     pdf.font_size 24
-    pdf.text HTMLEntities.new.decode(story[:description].gsub(/<\/?[^>]*>/, ""))
+    if story[:description]
+      pdf.text HTMLEntities.new.decode(story[:description].gsub(/<\/?[^>]*>/, ""))
+    end
 
     # New page
     pdf.start_new_page
